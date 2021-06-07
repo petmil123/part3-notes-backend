@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const config = require('./utils/config')
 
 if (process.argv.length<3) {
   console.log('give password as argument')
@@ -7,8 +8,7 @@ if (process.argv.length<3) {
 
 const password = process.argv[2]
 
-const url =
-  `mongodb+srv://fullstack:${password}@cluster0.ostce.mongodb.net/fs2021-notes?retryWrites=true&w=majority`
+const url = 
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
