@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+content-type: application/json
+
+{
+    "content": "User ID of the note creator is at the start sent along the request",
+    "important": true,
+    "userId": "60d0dcb52b8c4c25c01551b5"
+}

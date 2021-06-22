@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "notes": [],
+    "username": "admin",
+    "name": "Admin",
+    "password": "admin"
+}
+
+
